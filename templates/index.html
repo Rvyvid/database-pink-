@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet/global.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet/index.css') }}"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="home">
+      <div class="header">
+        <div class="heads">
+          <div class="list-item-link">
+            <a href="../about page/Aboutpage.html">
+            <div class="about-us">About Us</div>
+            </a>
+          </div>
+          <div class="list-item-link1">
+            <a href="#features" class="features">Features</a>
+          </div>
+          <div class="list-item-link2">
+            <div class="contact-us">Contact Us</div>
+          </div>
+          <div class="list-item-link3">
+            <div class="list-item-link4">
+              <div class="support">Support</div>
+            </div>
+          </div>
+          <div class="workspace">Workspace</div>
+          <div class="home1">Home</div>
+        </div>
+        <div class="divkmb-header-menu-extras">
+            <div class="list-item-link5">
+                {% if session.logged_in %}
+                    <a href="{{ url_for('logout') }}">
+                        <div class="log-in">Logout</div>
+                    </a>
+                {% else %}
+                    <a href="{{ url_for('login') }}">
+                        <div class="log-in">Login</div>
+                    </a>
+                {% endif %}
+            </div>        </div>
+        <a href="{{ url_for('index')}}" class="homelink">
+        <div class="dayslay-note">DAYSLAY NOTE</div>
+        </a>
+      </div>
+      <div class="question">
+        <div class="heading-3">Contacts</div>
+        <div class="contact-us-whenever">
+          Contact us whenever you have any questions.
+        </div>
+        <div class="we-are-always">We are always</div>
+        <div class="here-for-you">here for you!</div>
+        <div class="heading-2">Have a question?</div>
+        <div class="heading-21"></div>
+        <div class="form-label">First Name</div>
+        <div class="form-input"></div>
+        <div class="form-label1">Last Name</div>
+        <div class="form-input1"></div>
+        <div class="form-label2">Email address</div>
+        <div class="form-label3">*</div>
+        <div class="form-input2"></div>
+        <div class="form-label4">Phone</div>
+        <div class="form-input3"></div>
+        <div class="form-label5">Notes</div>
+        <div class="form-textarea"></div>
+        <div class="form-button-button">
+          <div class="submit">Submit</div>
+        </div>
+      </div>
+      <img
+        class="laptop-airport-lounge-53876-14-icon"
+        alt=""
+        src="{{ url_for('static', filename='images/laptopairportlounge-53876143023-1@2x.png') }}"/>
+
+        <a href="{{ url_for('login') }}">
+            <img class="home-child" alt="" src="{{ url_for('static', filename='images/rectangle-3.svg') }}" />
+        </a>
+        
+      <div class="try-dayslay-now">Try DaySlay Now</div>
+      <div class="slaytheday">#SlayTheDay</div>
+      <div class="your-digital-sanctuary">Your Digital Sanctuary</div>
+      <div class="footer">
+        <div class="footer1">
+          <img
+            class="instagram-1362857-1-icon"
+            alt=""
+            src="{{ url_for('static', filename='images/instagram-1362857-1@2x.png') }}"
+          />
+          <img
+            class="facebook-665209-1-icon"
+            alt=""
+            src="{{ url_for('static', filename='images/facebook-665209-1@2x.png') }}"
+          />
+
+          <div class="dayslay-note1">DAYSLAY NOTE</div>
+          <div class="slaytheday1">#SlayTheDay</div>
+          <img
+            class="email-3178165-1-icon"
+            alt=""
+            src="{{ url_for('static', filename='images/email-3178165-1@2x.png') }}"
+          />
+
+          <div class="logo"></div>
+          <div class="list-item-link6"></div>
+          <img class="logo-3-icon" alt="" src="{{ url_for('static', filename='images/logo-3@2x.png') }}"/>
+        </div>
+      </div>
+      <div id="features" class="features1">Features</div>
+      <div class="desktop-1">
+        <div class="desktop-1-child"></div>
+        <img
+          class="business-people-are-brainstorm-icon"
+          alt=""
+          src="{{ url_for('static' , filename='images/businesspeoplearebrainstorming-1@2x.png') }}"
+        />
+
+        <div class="desktop-1-item"></div>
+        <div class="desktop-1-inner"></div>
+        <b class="effortlessly-manage-your"></b
+        >
+        <!--<img
+          class="notearea234-1-icon"
+          alt=""
+          src=""
+        />-->
+
+        <b class="efficient-organization-is-container">
+          <span class="efficient-organization-is-container1">
+            <p class="efficient-organization-is"></p>
+            <p class="efficient-organization-is"></p>
+            <p class="efficient-organization-is"></p>
+            <p class="efficient-organization-is"></p>
+            <p class="efficient-organization-is"></p>
+          </span>
+        </b>
+        <!--<img
+          class="noteareaprofile-1-icon"
+          alt=""
+          src=""
+        />-->
+
+        <b class="your-space-your-container">
+          <span class="efficient-organization-is-container1">
+            <p class="efficient-organization-is"></p>
+            <p class="efficient-organization-is"></p>
+            <p class="efficient-organization-is"></p>
+          </span>
+        </b>
+        <b class="express-yourself-by-container">
+          <span class="efficient-organization-is-container1">
+            <p class="efficient-organization-is"></p>
+            <p class="efficient-organization-is"></p>
+            <p class="efficient-organization-is"></p>
+            <p class="efficient-organization-is"></p>
+          </span>
+        </b>
+        <!--<img
+          class="partofnotearea-1-icon"
+          alt=""
+          src=""
+        />-->
+
+        <div class="notepad-area"></div>
+        <!--<img class="notes123-1-icon" alt="" src="" />-->
+      </div>
+     
+      <img
+        class="workspace-with-computer-screen-icon"
+        alt=""
+        src="{{ url_for('static', filename='images/workspacewithcomputerscreenkeyboard-1@2x.png') }}"
+      />
+
+      <img class="logo-2-icon" alt="" src="{{ url_for('static', filename='images/logo-3@2x.png') }}"/>
+    </div>
+  </body>
+  <script src="{{ url_for('static', filename='js/scroll.js') }}"></script>
+</html>
